@@ -1,0 +1,21 @@
+.stories-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 54px;
+  background: #fafafa;
+}
+
+.stories-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 16px 8px;
+  background: white;
+  border-bottom: 1px solid #dbdbdb;
+  scrollbar-width: none;
+}
+
+.stories-scroll-container::-webkit-scrollbar {
+  display: none;
+} 

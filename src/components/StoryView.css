@@ -1,0 +1,59 @@
+.story-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 8px;
+}
+
+.story-image {
+  width: 100%;
+  height: calc(100% - 72px);
+  object-fit: contain;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.1s linear;
+  margin: 0 16px;
+  border-radius: 2px;
+  max-width: calc(100% - 32px);
+} 

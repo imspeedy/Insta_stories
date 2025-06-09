@@ -1,0 +1,47 @@
+.story-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.circle-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.circle-wrapper.unseen {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.circle-wrapper.seen {
+  background: #dbdbdb;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  background: white;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle-username {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #262626;
+  max-width: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+} 
